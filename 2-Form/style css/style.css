@@ -1,0 +1,35 @@
+main {
+    background-color: #FAFAFA;
+}
+
+h1 {
+    font-size: 36px;
+    font: 'Open Sans';
+    line-height: 100%;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+}
+
+input {
+    background-color: #F5F5F5;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FAFAFA;
+}
+
+form ::placeholder {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+    color: #666666;
+    font-size: 18px;
+}
+
