@@ -1,5 +1,8 @@
-main {
-    background-color: #FAFAFA;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -16,7 +19,10 @@ p {
 
 input {
     background-color: #F5F5F5;
+
 }
+
+
 
 button {
     background-color: #089FE0;
@@ -31,5 +37,179 @@ form ::placeholder {
 span {
     color: #666666;
     font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background: linear-gradient(0deg, #F39494, #F39494),
+    linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
+    linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
+
+}
+
+.main-content {
+    background-color: #FAFAFA;
+    width: 582px;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 225px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    
+}
+
+.register-content h1 {
+    margin: 0; /* Убираем все стандартные отступы */
+    /* или можно убрать только нижний */
+    margin-bottom: 12px; /* И добавляем свой маленький отступ */
+
+    /* Остальные стили для заголовка... */
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.register-content .account {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.register-content .account a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-content .account a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+* --- СТИЛИ ДЛЯ ФОРМЫ --- */
+.form-section {
+    width: 394px; /* Задаем фиксированную ширину для всей формы */
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Расстояние между рядами формы */
+}
+
+/* Ряд с полями "Имя" и "Фамилия" */
+.form-row {
+    display: flex;
+    width: 100%;
+}
+
+/* Общие стили для полей ввода */
+.form-section input[type="text"],
+.form-section input[type="email"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid #E0E0E0;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    outline: none; /* Убираем синюю обводку при фокусе */
+}
+
+.form-section .company-display {
+    width: 100%;
+    height: 48px;
+    padding: 13px 16px;
+    border: 1px solid #958b8b;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    outline: none; /* Убираем синюю обводку при фокусе */
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus {
+    border-color: #089FE0; /* Подсветка при клике на поле */
+}
+
+/* Стилизация первого поля в ряду (Имя) */
+.form-row input[name="name"] {
+    flex: 1; /* Занимает половину доступного места */
+    border-right: none; /* Убираем правую границу, чтобы они слились */
+    border-radius: 6px 0 0 6px; /* Скругляем только левые углы */
+}
+
+/* Стилизация второго поля в ряду (Фамилия) */
+.form-row input[name="lastname"] {
+    flex: 1; /* Занимает вторую половину */
+    border-radius: 0 6px 6px 0; /* Скругляем только правые углы */
+}
+
+/* Поле E-mail */
+.form-section input[type="email"] {
+    border-radius: 6px; /* Скругляем все углы */
+}
+
+
+/* Кнопка "Зарегистрироваться" */
+.submit-btn {
+    width: 100%;
+    height: 52px;
+    background-color: #089FE0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    /* Располагаем текст и стрелку */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #078ac4; /* Эффект при наведении */
+}
+
+.submit-btn .arrow {
+    font-size: 24px;
+    line-height: 1;
+    color: #FAFAFA;
+}
+
+/* Блок с чекбоксом */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #089FE0; /* Делает галочку синей */
+}
+
+.checkbox-container label a {
+    color: #089FE0;
+    text-decoration: none;
+}
+
+.checkbox-container label a:hover {
+    text-decoration: underline;
 }
 

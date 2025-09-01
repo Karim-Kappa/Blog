@@ -7,32 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main class="main-content">
 
         <section>
-            <h1>Регистрация</h1>
-            <span>
-                <p>Уже есть аккаунт? Войти</p>
-            </span>
+            <div class="register-content">
+                <h1>Регистрация</h1>
+                <div class="account">
+                    Уже есть аккаунт? <a href="#">Войти</a>
+                </div>
+            </div>
 
-            <p>Моя компания</p>
         </section>
 
-        <section>
-            <form action="/register">
-                <input type="text" name="name" id="name" placeholder="Имя">
-                <input type="text" name="lastname" id="lastname" placeholder="Фамилия">
-                <div>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                </div>
-                <button>Зарегистрироваться</button>
-                <div>
-                    <label for="recept">Я прочитал и принимаю условия пользования</label>
-                    <input type="checkbox" name="recept" id="recept">
-                </div>
-                
-            </form>
-        </section>
+        <section class="form-section">
+    <form action="/register">
+
+        <div class="company-display">Моя компания</div>
+        <div class="form-row">
+            <input type="text" name="name" id="name" placeholder="Имя">
+            <input type="text" name="lastname" id="lastname" placeholder="Фамилия">
+        </div>
+
+        <input type="email" name="email" id="email" placeholder="E-mail">
+
+        <button type="submit" class="submit-btn">
+            Зарегистрироваться
+            <span class="arrow">→</span>
+        </button>
+
+        
+        <div class="checkbox-container">
+            <input type="checkbox" name="recept" id="recept">
+            <label for="recept">
+                Я прочитал и принимаю <a href="#">Условия использования</a>
+            </label>
+        </div>
+        
+    </form>
+</section>
     </main>
 
 </body>
