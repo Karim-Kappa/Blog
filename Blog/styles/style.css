@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+li, p, h1, h4 {
+    color: #FFFFFF;
+}
+
+.head-h1 {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    width: 525px;
+    height: 76px;
+}
+
+.name {
+    font-size: 16px;
+    line-height: 28px;
+    margin-block: 0px;
+}
+
+.work {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 0px;
+}
+
+.section-caption {
+    width: 708px;
+    height: 100%;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+
+
+.search-button::placeholder {
+    padding: 10px 0px 10px 30px;
+    background-image: url('../icons/search.svg'); /* Замените на свой путь */
+    background-repeat: no-repeat;
+    background-size: 14px; /* Размер иконки */
+    background-position: 5px;
+    
+}
+
+.title-date {
+    color: #FFFFFF;
+    margin-top: 14px;
+    opacity: 60%;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 180px; 
+    align-items: center
+
+}
+
+.container-header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo-B {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4B5563;
+    background-color: #4B5563;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 71px;
+}
+
+.search-button {
+    background-color: #1F293799;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    margin-bottom: 69px;
+    width: 224px;
+    height: 40px;
+    border: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center
+
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-profile {
+    display: flex;
+    gap: 15px;
+}
+
+.container-profile img {
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 60%;
+    margin-bottom: 80px;
+    color: #FFFFFF;
+}
